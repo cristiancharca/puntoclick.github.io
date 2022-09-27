@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script type="module" src="./js/script.js"></script>
+    
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+</head>
+
+<body>
+    <header class="container-fluid text-white bg-dark position-sticky top-0">
+        
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="./img/favicon.png" height="50" width="100">
+                <h2 class="nav__title">Punto Click.</h2>
+                <h2 class="nav__title">Soluciones Informaticas</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <img src="./img/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a href="index.html" class="nav-link " type="button" role="tab"  aria-selected="true">Inicio</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Acerca de</a>
+            </li>
+        </ul>
+
+
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+        Producto removido!
+    </div>
+
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel"
+            aria-labelledby="pills-profile-tab" tabindex="0">
+
+            <h3 class="h4 m-4 text-primary text-black">Cursos Disponibles</h3>
+            <div class=" row row.cols-sm-1 row row.cols-sm-1 row row row.cols-md-2 row.cols-lg-3 row row.cols-xl-4">
+
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Arduino Nivel 1</h5>
+                        <img src="./img/producto1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Conociendo la plataforma de Arduino
+                                para el desarrollo de robots basicos con moviemiento de motores</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">220</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(15, 52, 131);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Arduino Nivel 2</h5>
+                        <img src="./img/producto2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Salidas Digitales en Arduino Uno, Mega,
+                                 Leonardo o Cualquier Arduino. Aprende a programarlas y configurarlas de diferentes formas.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">180</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(15, 52, 131);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Arduino Nivel 3</h5>
+                        <img src="./img/producto3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">Entradas Digitales en Arduino: Aprende a
+                                 programarlas paso a paso, aprende a leer diferentes entradas, condicionar voltajes y 
+                                 mira ejemplo prácticos.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">120</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(15, 52, 131);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Programacion Nivel 1</h5>
+                        <img src="./img/producto4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">¿Qué aprenderás?
+                                Comprender los fundamentos de programación.
+                                Comprender la lógica que está detrás de cualquier lenguaje.
+                                Resolver ejercicios de programación.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">180</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(39, 207, 212);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Programacion Nivel 2</h5>
+                        <img src="./img/producto5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">¿Qué conocimientos previos necesitas?
+                                Ninguno (saber encender una computadora y utilizarla). Este curso es desde cero y 
+                                solo necesitas querer aprender a programar.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">150</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(39, 207, 212);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Programacion Nivel 3</h5>
+                        <img src="./img/producto6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">¿A quién está dirigido este curso?
+                                Cualquier persona sin conocimientos de programación que desee empezar en este mundo.
+                                Programadores junior que requieran reforzar conceptos.
+                                Programadores novatos que tienen muchas dudas sobre los fundamentos.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">120</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(39, 207, 212);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h5 class="card-title text-white pt-2 text-center text-primary">Proyectos de Grado</h5>
+                        <img src="./img/producto7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text text-white-50 description">La programación puede parecer intimidante 
+                                al principio, sin embargo todos los lenguajes comparten los mismos principios y la 
+                                misma lógica. Este curso te enseñará a pensar como un programador, creando algoritmos 
+                                y aplicando soluciones en lenguajes de programación reales. Si quieres convertirte en
+                                 programador, este curso te enseñará los fundamentos para programar en cualquier lenguaje.</p>
+                            <h5 class="text-primary text-white">Precio: <span class="precio">520</span></h5>
+                            <div class="d-grid gap-2">
+                                <button id="botonA" class="btn btn-primary button" style="background-color:rgb(13, 124, 9);">Añadir
+                                    a Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <br>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr class="text-primary">
+                        <th scope="col">#</th>
+                        <th scope="col">Curso</th>
+                        <th scope="col">Precios</th>
+                        <th scope="col">Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+
+                </tbody>
+            </table>
+            <br><br>
+            <div class="row mx-4">
+                <div class="col">
+                    <h3 class="itemCartTotal text-black"> Total: 0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    
+                    
+                    <button class="btn btn-success .botonpagar"> <li class="nav-item" role="presentation">
+                        <a href="formulario.html" class="nav-link " type="button" role="tab"  aria-selected="true">Pagar</a>
+                    </li></button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid_item3" style="background-color:#0e0e6d">
+        <footer class="footer">
+            <section class="footer__container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer__title">Robotica Educativa</h2>
+    
+                    <ul class="nav__link nav__link--footer">
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Inicio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Acerca de</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Contacto</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                    <h2 class="footer__newsletter">Ingresa tu nombre</h2>
+                    <div class="footer__inputs">
+                        <input type="text" placeholder="Alias:" class="footer__input" id="nombreid">
+                        <input onclick="nombre_bienvenido()" value="Iniciar Sesion" class="footer__submit">
+                        
+                        <script>
+                            function nombre_bienvenido() {
+    
+                                var nombrevar = document.getElementById("nombreid").value;
+                                var objetivo = document.getElementById("texto_nombre");
+                                objetivo.innerHTML=nombrevar;
+                            }
+                        </script>
+                        
+                        
+                    </div>
+                    <h3 class="footer__newsletter"> <br> Bienvenido <label id="texto_nombre"></label> </h3>
+                </form>
+            </section>
+    
+            <section class="footer__copy container">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/cristian.charca" class="footer__icons"><img
+                            src="./img/facebook.svg" class="footer__img"></a>
+                    <a href="#" class="footer__icons"><img src="./img/twitter.svg" class="footer__img"></a>
+                    <a href="https://www.youtube.com/c/CRISTIANCHARCAMENDOZA" class="footer__icons"><img
+                            src="./img/youtube.svg" class="footer__img"></a>
+                </div>
+    
+                <h3 class="footer__copyright">Derechos reservados &copy; Punto Click</h3>
+            </section>
+        </footer>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/script.js" defer></script>
+
+</body>
+
+
+</html>

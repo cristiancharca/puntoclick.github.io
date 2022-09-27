@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/formulario.css" media="screen">
+
+        <!-- Título da página (aparece na aba) -->
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script type="module" src="./js/script.js"></script>
+    
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+
+    <body>  
+        <header class="container-fluid text-white bg-dark position-sticky top-0">
+        
+            <nav class="nav container">
+                <div class="nav__logo">
+                    <img src="./img/favicon.png" height="50" width="100">
+                    <h2 class="nav__title">Punto Click.</h2>
+                    <h2 class="nav__title">Soluciones Informaticas</h2>
+                </div>
+    
+                <ul class="nav__link nav__link--menu">
+                    <img src="./img/close.svg" class="nav__close">
+                </ul>
+    
+                <div class="nav__menu">
+                    <img src="./img/menu.svg" class="nav__img">
+                </div>
+            </nav>
+    
+            <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a href="index.html" class="nav-link " type="button" role="tab"  aria-selected="true">Inicio</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Acerca de</a>
+                </li>
+            </ul>
+    
+    
+        </header>
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <center>
+
+        <div>
+            <h1 id="titulo">Registro de Pagos</h1>
+            <p id="subtitulo">Complete toda la Informacion</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nombre</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Apellidos</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            
+
+            <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label><strong>Con que tarjeta desea pagar</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Bisa
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">MasterCard
+                </label>
+                
+            </div>
+            <div class="campo">
+                <label for="nome"><strong>Ultimos 4 numeros de su tarjeta de Pago</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            
+
+            <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Comentario: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->      
+
+        </form>
+    </center>
+    <br>
+    <center><button class="botao" type="submit" onsubmit="">Concluído</button></center>
+        <footer class="footer">
+            <section class="footer__container container">
+                <nav class="nav nav--footer">
+                    <h2 class="footer__title">Robotica Educativa</h2>
+    
+                    <ul class="nav__link nav__link--footer">
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Inicio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Acerca de</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Contacto</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__links">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                    <h2 class="footer__newsletter">Ingresa tu nombre</h2>
+                    <div class="footer__inputs">
+                        <input type="text" placeholder="Alias:" class="footer__input" id="nombreid">
+                        <input onclick="nombre_bienvenido()" value="Iniciar Sesion" class="footer__submit">
+                        
+                        <script>
+                            function nombre_bienvenido() {
+    
+                                var nombrevar = document.getElementById("nombreid").value;
+                                var objetivo = document.getElementById("texto_nombre");
+                                objetivo.innerHTML=nombrevar;
+                            }
+                        </script>
+                        
+                        
+                    </div>
+                    <h3 class="footer__newsletter"> <br> Bienvenido <label id="texto_nombre"></label> </h3>
+                </form>
+            </section>
+    
+            <section class="footer__copy container">
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/cristian.charca" class="footer__icons"><img
+                            src="./img/facebook.svg" class="footer__img"></a>
+                    <a href="#" class="footer__icons"><img src="./img/twitter.svg" class="footer__img"></a>
+                    <a href="https://www.youtube.com/c/CRISTIANCHARCAMENDOZA" class="footer__icons"><img
+                            src="./img/youtube.svg" class="footer__img"></a>
+                </div>
+    
+                <h3 class="footer__copyright">Derechos reservados &copy; Punto Click</h3>
+            </section>
+        </footer>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/script.js" defer></script>
+    </body>
+
+</html>
+
+
+
+

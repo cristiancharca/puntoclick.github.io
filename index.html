@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Click</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    
+
+    
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <img src="./img/favicon.png" height="50" width="100">
+                <h2 class="nav__title">Punto Click.</h2>
+                <h2 class="nav__title">Soluciones Informaticas</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="productos.html" class="nav__links">Ver cursos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Carrito</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Quienes Somos</a>
+                </li>
+
+                <img src="./img/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Aprende Robotica desde cero.</h1>
+            <p class="hero__paragraph">Elige aprender electronica y programacion y seras
+                capaz de crear robots de competencia.</p>
+            <a href="#" class="cta">Comienza ahora</a>
+        </section>
+    </header>
+
+
+
+    
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">¿Qué aprenderás en este curso?</h2>
+            <p class="about__paragraph">Lo mas escencial que es la programacion, armado de circuitos y
+                desarrollo de robots y más)</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./img/shapes.svg" class="about__icon">
+                    <h3 class="about__title">Electronica</h3>
+                    <p class="about__paragrah">Conocimiento en componentes electronicos, valores, funciones
+                        importantes para resolver el problema</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./img/paint.svg" class="about__icon">
+                    <h3 class="about__title">Informatica</h3>
+                    <p class="about__paragrah">La parte logica de nuestros robots, comenzando a programar para
+                        brindarle autonomia y enlazar el hardware y software</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./img/code.svg" class="about__icon">
+                    <h3 class="about__title">Mecanica</h3>
+                    <p class="about__paragrah">La parte encargada de ejercer el movimiento de nuestros prototipos
+                        sin tener dificultad viendo y analizando errores.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">Curso completo de Arduino. ¡Comienza con los mejores!</h2>
+                    <p class="knowledge__paragraph">Toma la primera clase de manera gratuita para observar la calidad
+                        que ofrecemos para su mejor aprendizaje, ademas siempre contaras con el esquema
+                        el codigo y todo lo relacionado con lo avanzado para eso te mostramos</p>
+                         <a href="productos.html" class="cta">Ver Curso</a>
+                         <br><br>
+                         <h2 class="subtitle">Conversor de Moneda</h2>
+                         
+                        <input type="text" placeholder="Valor:" class="footer__input" id="valorid">
+                        <br>
+                    <input onclick="dolares()" value="A Dolares" class="footer__submit">
+                    <input onclick="bolivianos()" value="A Bolivianos" class="footer__submit">
+                    <script>
+                        function dolares() {
+
+                            var dato = document.getElementById("valorid").value;
+                            var resultado=parseInt(dato)/6.98;
+                            var objetivo = document.getElementById("resultado");
+                            objetivo.innerHTML=resultado;
+                        }
+                    </script>
+                    <script>
+                        function bolivianos() {
+
+                            var dato = document.getElementById("valorid").value;
+                            var resultado=parseInt(dato)*6.98;
+                            var objetivo = document.getElementById("resultado");
+                            objetivo.innerHTML=resultado;
+                        }
+                    </script>
+                                     
+                
+                <h3 class="knowledge__paragraph"> <br> Reultado: <label id="resultado"></label> </h3>
+                <br>
+
+                   
+                    
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./img/macbook.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="price container">
+            <h2 class="subtitle">Tenemos los siguientes Modulos para ti</h2>
+
+            <div class="price__table">
+                <div class="price__element">
+                    <p class="price__name">Arduino</p>
+                    <h3 class="price__price">Nivel 1</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Arduino</p>
+                        <p class="price__features">Leds</p>
+                        <p class="price__features">Resistencias</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">Arduino</p>
+                    <h3 class="price__price">Nivel 2</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Motores</p>
+                        <p class="price__features">Sensores</p>
+                        <p class="price__features">Actuadores</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+                <div class="price__element">
+                    <p class="price__name">Arduino</p>
+                    <h3 class="price__price">Nivel 3</h3>
+
+                    <div class="price__items">
+                        <p class="price__features">Domotica</p>
+                        <p class="price__features">Proyectos</p>
+                        <p class="price__features">Robotica</p>
+                    </div>
+
+                    <a href="#" class="price__cta">Empieza ahora</a>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Robotica Educativa</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form" action="https://formspree.io/f/mknkkrkj" method="POST">
+                <h2 class="footer__newsletter">Ingresa tu nombre</h2>
+                <div class="footer__inputs">
+                    <input type="text" placeholder="Alias:" class="footer__input" id="nombreid">
+                    <input onclick="nombre_bienvenido()" value="Iniciar Sesion" class="footer__submit">
+                    
+                    <script>
+                        function nombre_bienvenido() {
+
+                            var nombrevar = document.getElementById("nombreid").value;
+                            var objetivo = document.getElementById("texto_nombre");
+                            objetivo.innerHTML=nombrevar;
+                        }
+                    </script>
+                    
+                    
+                </div>
+                <h3 class="footer__newsletter"> <br> Bienvenido <label id="texto_nombre"></label> </h3>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/cristian.charca" class="footer__icons"><img
+                        src="./img/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./img/twitter.svg" class="footer__img"></a>
+                <a href="https://www.youtube.com/c/CRISTIANCHARCAMENDOZA" class="footer__icons"><img
+                        src="./img/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; Punto Click</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
